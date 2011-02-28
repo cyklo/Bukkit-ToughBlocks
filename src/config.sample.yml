@@ -1,0 +1,77 @@
+# Set this to "low" to reduce number of boot messages
+verbosity: normal
+
+# Try adjusting this if you have compatibility problems with other plguins.
+# Default: "lowest". Can also use "low", "normal", "high", "highest".
+priority: lowest
+
+# Do we print out progress messages?
+showprogress: true
+
+toughblocks:
+##########
+# This is a sample configuration file for ToughBlocks
+# Configuration blocks are set out as followed:
+#
+# NAME_OF_BLOCK:
+#     - tool: NAME_OF_TOOL (or ALL for all tools, or a list of tools like this: [TOOL_A, TOOL_B, TOOL_C])
+#       damage: DAMAGE_VALUE (anything between 0 and 360)
+#
+# For lists of appropriate values for
+# blocks and tools, see: http://cliqr.org/V
+#
+# If you want to specify different tools,
+# keep adding sub-blocks, but prefix the tool
+# line with a dash, like so:
+#
+# GRASS:
+#     - tool: [GOLD_SPADE, DIAMOND_SPADE]
+#       damage: 180
+#     - tool: ALL
+#       damage: 45
+#
+# A tool: ALL statement sets the drop for any
+# tools not yet specified. Therefore, it should
+# always be the last item in a list.
+#
+# Uncomment any of the blocks below to see some example
+# behaviours
+#
+##########
+# Make stone take twice as long
+###
+#
+#    STONE:
+#        - tool: ALL
+#          damage: 180
+#
+##########
+# Make grass three times harder unless using a golden spade
+###
+#
+#    GRASS:
+#        - tool: GOLD_SPADE
+#          damage: 360
+#        - tool: ALL
+#          damage: 120
+#
+##########
+# Make cobblestone eightr times as hard unless using a pick,
+# when it is twice as hard instead
+###
+#
+#    COBBLESTONE:
+#        - tool: [WOODEN_PICKAXE, STONE_PICKAXE, IRON_PICKAXE, DIAMOND_PICKAXE, GOLD_PICKAXE]
+#          damage: 180
+#        - tool: ALL
+#          damage: 45
+#
+##########
+# Make Obsidian impossible!
+###
+#
+#    OBSIDIAN:
+#        - tool: ALL
+#          damage: 0
+#
+###
