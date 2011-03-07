@@ -12,7 +12,7 @@ The related discussion thread for this plugin is located at
 Building from source
 -----------
 
-Please note that OtherBlocks contains submodules, so to checkout:
+Please note that ToughBlocks contains submodules, so to checkout:
 
     git clone git://github.com/cyklo/Bukkit-ToughBlocks.git
     cd Bukkit-ToughBlocks
