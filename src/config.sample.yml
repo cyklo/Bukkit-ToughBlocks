@@ -61,7 +61,7 @@ toughblocks:
 ###
 #
 #    COBBLESTONE:
-#        - tool: [WOODEN_PICKAXE, STONE_PICKAXE, IRON_PICKAXE, DIAMOND_PICKAXE, GOLD_PICKAXE]
+#        - tool: [WOOD_PICKAXE, STONE_PICKAXE, IRON_PICKAXE, DIAMOND_PICKAXE, GOLD_PICKAXE]
 #          damage: 180
 #        - tool: ALL
 #          damage: 45
